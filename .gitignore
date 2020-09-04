@@ -1,6 +1,8 @@
 *.iml
 .idea/
 
+dataflow-tweets/target/
+
 twitter-scrapper/secrets*
 
 # Compiled class file

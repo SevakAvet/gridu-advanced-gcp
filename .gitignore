@@ -1,6 +1,8 @@
 *.iml
 .idea/
 
+twitter-scrapper/secrets*
+
 # Compiled class file
 *.class
 

@@ -10,6 +10,7 @@
 
     <modules>
         <module>dataflow-tweets</module>
+        <module>sessions-spark</module>
     </modules>
 
 </project>

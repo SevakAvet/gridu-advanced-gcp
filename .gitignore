@@ -2,8 +2,9 @@
 .idea/
 
 target/
-sessions-spark/target/
 dataflow-tweets/target/
+sessions-spark/target/
+sessions-spark/dependency-reduced-pom.xml
 
 twitter-scrapper/secrets*
 

@@ -1,9 +1,8 @@
 package com.sevak_avet
 
-import org.apache.spark.internal.Logging
 import org.apache.spark.sql.{DataFrame, SparkSession}
 
-object Runner extends Logging {
+object Runner {
   def runTask(sessions: DataFrame, taskNumber: Int): Unit = {
     val methodName = s"task${taskNumber}"
     val method = classOf[SessionsAnalyser]
@@ -18,7 +17,7 @@ object Runner extends Logging {
   def run(spark: SparkSession, args: Array[String]): Unit = {
     val taskNumber = Integer.parseInt(args(0))
     if (taskNumber < 1 || taskNumber > 8) {
-      logError(s"Task #${taskNumber} not found")
+      print(s"Task #${taskNumber} not found")
       return
     }
 
